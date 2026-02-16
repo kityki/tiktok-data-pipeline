@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+.DS_Store
+logs/
+plugins/
+tmp/
+data/
+airflow-worker.pid
+airflow.cfg
+webserver_config.py
