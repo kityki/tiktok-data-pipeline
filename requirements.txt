@@ -1,0 +1,5 @@
+apache-airflow-providers-mongo
+apache-airflow-providers-apache-spark
+pyspark
+pandas
+pymongo
