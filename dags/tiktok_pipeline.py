@@ -20,7 +20,7 @@ processed_dataset = Asset(f"file://{FINAL_FILE}")
 # =======================================
 @dag(
     dag_id='1_tiktok_processing',
-    start_date=datetime(2024, 1, 1),
+    start_date=datetime(2026, 1, 20),
     schedule='@daily',
     catchup=False,
     description='Senses file, branches, and processes data'
@@ -83,7 +83,7 @@ def processing_dag():
 # ====================================
 @dag(
     dag_id='2_tiktok_mongo_loader',
-    start_date=datetime(2024, 1, 1),
+    start_date=datetime(2026, 1, 20),
     schedule=[processed_dataset], 
     catchup=False,
     description='Loads processed data into MongoDB automatically'
